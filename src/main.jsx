@@ -36,11 +36,11 @@ import { Home, About, Layout, Contact, User, Github, githubInfoLoader } from './
 //Another way to write:
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
-      <Route path='' element={<Home />} />
-      <Route path='about' element={<About />} />
-      <Route path='contact' element={<Contact />} />
-      <Route path='user/:userid' element={<User />} />
+    <Route path='/r-router' element={<Layout />}>
+      <Route path='/r-router' element={<Home />} />
+      <Route path='/r-router/about' element={<About />} />
+      <Route path='/r-router/contact' element={<Contact />} />
+      <Route path='/r-router/user/:userid' element={<User />} />
       <Route 
       loader={githubInfoLoader}
       path='github' 
